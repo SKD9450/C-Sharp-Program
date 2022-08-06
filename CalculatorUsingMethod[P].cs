@@ -15,6 +15,9 @@ class Calculator
             case '*':
                 result = a * b;
                 break;
+            case '/':
+                result= a / b;
+                break;
             default:
                 result = 0; ;
                 break;
