@@ -1,0 +1,30 @@
+using System;
+class Number
+{
+    static bool Prime(int n)
+    {
+        int i = 2;
+        int count = 0;
+        bool result = false;
+        while(i<n/2)
+        {
+            if (n % i == 0)
+            {
+                result = false;
+                count = 1;
+                break;
+            }
+        }
+        if (count == 0)
+        {
+            result = true;
+        }
+        return result;
+    }
+    static void Main()
+    {
+        Console.Write("Enter the number:");
+        int n = int.Parse(Console.ReadLine());
+        Console.WriteLine(Prime(n));
+    }
+}
