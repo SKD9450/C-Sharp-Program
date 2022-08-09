@@ -1,0 +1,32 @@
+using System;
+class Calculator
+{
+    static int number(int a, int b, char choise)
+    {
+        int result = 0;
+        switch (choise)
+        {
+            case '+':
+                result = a + b;
+                break;
+            case '-':
+                result = a - b;
+                break;
+            default:
+                result = 0;
+                break;
+        }
+        return result;
+
+    }
+        static void Main()
+        {
+        Console.Write("enter the no:");
+        int a = int.Parse(Console.ReadLine());
+        Console.Write("enter the no:");
+        int b = int.Parse(Console.ReadLine());
+        Console.Write("enter the no:");
+        char choise = char.Parse(Console.ReadLine());
+        Console.Write(number(a, b, choise));
+        }
+}
