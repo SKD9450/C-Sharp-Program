@@ -1,0 +1,23 @@
+using System;
+class Reverse
+{
+    static string Word(string word)
+    {
+        string reverse = "";
+        int i = 0;
+        i = word.Length - 1;
+        while (i >= 0)
+        {
+            reverse = reverse + word[i];
+            i--;
+        }
+        return reverse;
+    }
+    static void Main()
+    {
+        Console.Write("Enter the string:");
+        string word = Console.ReadLine();
+        System.Console.WriteLine(Word(word));
+        Console.ReadKey();
+    }
+}
