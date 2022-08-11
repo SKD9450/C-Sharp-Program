@@ -1,0 +1,24 @@
+using System;
+class LeapYear
+{
+    int year;
+    LeapYear()
+    {
+        Console.Write("Enter the Year:");
+        int year = int.Parse(Console.ReadLine());
+
+        if (year % 4 == 0)
+        
+            Console.WriteLine("{0} Year is LeapYear");
+            else
+                Console.WriteLine("{0} Year is Not LeapYear");
+        
+    }
+    static void Main()
+    {
+        LeapYear Leap = new LeapYear();
+        Console.ReadLine();
+    }
+
+        
+}
