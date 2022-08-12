@@ -1,0 +1,35 @@
+using System;
+class Prime
+{
+    int n;
+  
+    Prime(int n)
+    {
+        this.n = n;
+    }
+    static void Main() 
+    {
+        bool flag = true;
+        Console.Write("Enter the number:");
+        int n = int.Parse(Console.ReadLine());
+        int i = 2;
+
+        while(i<n / 2)
+        {
+            if (n % i == 0)
+            {
+                flag = false;
+                
+                break;
+            }
+                i++;
+        }
+        if (flag == true)
+          Console.WriteLine("Number is Prime");
+        else
+          Console.WriteLine("Number is not Prime");
+       
+          Prime prime = new Prime(n);
+          Console.ReadKey();
+    }
+}
