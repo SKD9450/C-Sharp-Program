@@ -1,0 +1,33 @@
+using System;
+class Calculator
+{
+    int a;
+    int b;
+    int choise;
+    int result = 0;
+    Calculator()
+    {
+        Console.Write("Enter first number:");
+        int a = int.Parse(Console.ReadLine());
+        Console.Write("Enter first number:");
+        int b = int.Parse(Console.ReadLine());
+        Console.Write("Enter second number:");
+        char choise = char.Parse(Console.ReadLine());
+
+        if (choise == '+')
+            result = a + b;
+        else if (choise == '-')
+            result = a - b;
+        else if (choise == '*')
+            result = a * b;
+        else
+            result = 0;
+        Console.WriteLine(result);
+    }
+    static void Main()
+    {
+        Calculator cal = new Calculator();
+        Console.ReadKey();
+    }
+
+}
