@@ -1,0 +1,22 @@
+using System;
+class demo
+{
+    int num;
+    int i = 1;
+    demo()
+    {
+        Console.Write("Enter the Number:");
+        int num = int.Parse(Console.ReadLine());
+
+        while(i <= 10)
+        {
+            Console.WriteLine("{0}*{1}={2}",num,i,num*i);
+            i++;
+        }
+    }
+    static void Main()
+    {
+        demo d = new demo();
+        Console.ReadKey();
+    }
+}
