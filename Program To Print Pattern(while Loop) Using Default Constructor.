@@ -1,0 +1,24 @@
+using System;
+class Pattern
+{
+    Pattern()
+    {
+        int ctr = 1;
+        while (ctr <= 5)
+        {
+            int ptr = 1;
+            while (ptr <= ctr)
+            {
+                Console.Write("A");
+                ptr++;
+            }
+            Console.WriteLine();
+            ctr++;
+        }
+    }
+    static void Main()
+    {
+        Pattern p = new Pattern();
+        Console.ReadKey();
+    }
+}
