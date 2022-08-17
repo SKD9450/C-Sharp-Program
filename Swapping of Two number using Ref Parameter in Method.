@@ -1,0 +1,18 @@
+class demo
+{
+    static void swap(ref int x, ref int y)
+    {
+        int z = x;
+        x = y;
+        y = z;
+        System.Console.WriteLine(x + " " + y);
+    }
+    static void Main()
+    {
+        int num1 = 100;
+        int num2 = 50;
+        swap(ref num1, ref num2);
+        System.Console.WriteLine(num1 + " " + num2);
+        System.Console.ReadKey();
+    }
+}
