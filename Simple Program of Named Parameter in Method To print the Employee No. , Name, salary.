@@ -1,0 +1,14 @@
+class demo
+{
+    static void Display(int empNo, string empName, double empSal)
+    {
+        System.Console.WriteLine(empNo);
+        System.Console.WriteLine(empName);
+        System.Console.WriteLine(empSal);
+    }
+    static void Main()
+    {
+        Display(3454,empSal: 2400, empName: "rajeev");
+        System.Console.ReadKey();
+    }
+}
