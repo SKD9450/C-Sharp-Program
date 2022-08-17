@@ -1,0 +1,23 @@
+using System;
+class demo
+{
+    static bool Display(int value,params int[] arr)
+    {
+        bool flag = false;
+        foreach(int data in arr)
+        {
+            if (data == value)
+            {
+                flag = true;
+                break;
+            }
+        }
+        return flag;
+    }
+    static void Main()
+    {
+        bool res = Display(1, 1, 2, 3, 5, 4);
+        Console.WriteLine(res);
+        Console.ReadKey();
+    }
+}
