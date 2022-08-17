@@ -1,0 +1,15 @@
+class demo
+{
+    static void M1(dynamic data)
+    {
+        System.Console.WriteLine(data);
+    }
+    static void Main()
+    {
+        M1(100);
+        M1("Chetu");
+        M1(true);
+        M1(100.88);
+        System.Console.ReadKey();
+    }
+}
