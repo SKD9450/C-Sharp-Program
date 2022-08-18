@@ -1,0 +1,22 @@
+using System;
+internal class Test
+{
+    public static void Show()
+    {
+        Console.WriteLine("Hello");
+    }
+    public void Display()
+    {
+        Console.WriteLine("Hi");
+    }
+}
+class Demo
+{
+    static void Main()
+    {
+        Test t = new Test();
+        t.Display();
+        Test.Show();
+        Console.ReadKey();
+    }
+}
