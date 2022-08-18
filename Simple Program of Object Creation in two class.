@@ -1,0 +1,27 @@
+using System;
+class Demo
+{
+    public  void Show()
+    {
+        Console.WriteLine("Hello");
+    }
+    public void Display()
+    {
+        Console.WriteLine("Hi");
+    }
+}
+class Test
+{
+    void Process()
+    {
+        Demo d = new Demo();
+        d.Show();
+        d.Display();
+    }
+    static void Main()
+    {
+        Test t = new Test();
+        t.Process();
+        Console.ReadKey();
+    }
+}
