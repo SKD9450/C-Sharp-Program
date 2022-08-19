@@ -1,0 +1,28 @@
+using System;
+class Demo
+{
+    static void Main()
+    {
+        int i = 0;
+            while(i<=5)
+            {
+               int j = 5;
+                while (j >= i)
+                {
+                    Console.Write(" ");
+                    j--;
+                }
+               int k = 0;
+               while (k <= i)
+               {
+                  Console.Write(i);
+                   k++;
+               }
+
+                Console.WriteLine();
+                 i++;
+            }
+        
+        
+    }
+}
