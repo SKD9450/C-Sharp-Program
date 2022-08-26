@@ -14,7 +14,7 @@ namespace Program_of_Has_A_using_Properties
         {
             set
             {
-                houseNo = HouseNo;
+                houseNo = value;
             }
              get
             {
@@ -25,7 +25,7 @@ namespace Program_of_Has_A_using_Properties
         {
             set
             {
-                houseName = HouseName;
+                houseName = value;
             }
             get
             {
@@ -36,7 +36,7 @@ namespace Program_of_Has_A_using_Properties
         {
             set
             {
-                pinCode = PinCode;
+                pinCode =value;
             }
             get
             {
@@ -60,7 +60,7 @@ namespace Program_of_Has_A_using_Properties
         {
             set
             {
-                empNo = EmpNo;
+                empNo = value;
             }
             get
             {
@@ -71,7 +71,7 @@ namespace Program_of_Has_A_using_Properties
         {
             set
             {
-                empName = EmpName;
+                empName = value;
             }
             get
             {
@@ -82,7 +82,7 @@ namespace Program_of_Has_A_using_Properties
         {
             set
             {
-                empSal = EmpSal;
+                empSal = value;
             }
             get
             {
@@ -93,7 +93,7 @@ namespace Program_of_Has_A_using_Properties
         {
             set
             {
-                empAdress = EmpAdress;
+                empAdress = value;
             }
             get
             {
@@ -121,14 +121,15 @@ namespace Program_of_Has_A_using_Properties
             Console.WriteLine("....................");
 
             Employee employee = new Employee();
-            employee.EmpNo=(num);
-            Adress adress = new Adress();
-            adress.HouseNo=HouseNo;
-            adress.HouseName=HouseName;
-            adress.PinCode=PinCode;
-            employee.EmpAdress=adress;
-            employee.EmpName=Name;
-            employee.EmpSal=Salery;
+            employee.EmpNo = num;
+       
+            employee.EmpName= Name;
+            employee.EmpSal= Salery;
+             Adress adress = new Adress();
+        employee.EmpAdress= adress;
+            adress.HouseNo= HouseNo;
+            adress.HouseName= HouseName;
+            adress.PinCode= PinCode;
 
             Console.WriteLine("No is: " + employee.EmpNo);
             Console.WriteLine("Name is: " + employee.EmpName);
